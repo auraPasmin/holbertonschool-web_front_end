@@ -1,0 +1,29 @@
+html {
+    /*When scrolling is triggered on the html*/
+    scroll-behavior: smooth;
+}
+
+body {
+    /* set the foreground color*/
+    color: #161616;
+}
+
+a{
+    /*For all anchor elements*/
+    color: #161616;
+}
+
+.visually-hidden {
+	/*should have their display to none*/
+	display: none;
+}
+
+.card-category {
+	/*should have their foreground color*/
+	color: #D73953;
+}
+
+.section-tagline {
+	/*should have their foreground color*/
+	color: #D73953;
+}

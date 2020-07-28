@@ -73,9 +73,9 @@ a:hover {
 	/* set the decortation (with a underscore under text) */
 	text-decoration: underline;
 }
-a:hover {
-	/* set the decortation (with a underscore under text) */
-	text-decoration: underline;
+a:active {
+	/* set the background color */
+	background-color: var(--color-light-grey);
 }
 
 .visually-hidden {

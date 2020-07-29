@@ -301,6 +301,7 @@ ul.row {
 	/*2 times root element */
 	padding: 2rem;
 	/*background color */
+	background-color: var(--color-light-grey);
 }
 
 .card-services a:hover {

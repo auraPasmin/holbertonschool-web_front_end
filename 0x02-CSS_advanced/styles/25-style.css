@@ -112,6 +112,28 @@ a:active {
 	/* set the background color */
 	background-color: var(--color-light-grey);
 }
+.button {
+	/* set display (render) */
+	display: var(--button-display);
+	/* set the padding, the margin inside element */
+	padding: var(--button-padding);
+	/* set the boder style */
+	border: var(--button-border);
+	/* set the letter size */
+	font-size: var(--button-font-size);
+	/* set the letter color */
+	color: var(--button-color);
+	/* set the text decoration to none */
+	text-decoration: var(--button-text-decoration);
+}
+.button:hover {
+	/* color text */
+	color: var(--button-hover-color);
+	/* text decorarion to none */
+	text-decoration: var(--button-hover-text-decoration);
+	/* background color */
+	background: var(--button-hover-background);
+}
 
 .visually-hidden {
 	/*should have their display to none*/

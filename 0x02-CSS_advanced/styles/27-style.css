@@ -1,0 +1,382 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */
+
+*, *:before, *:after {
+	/*Just before the styling for html, add a universal box sizing rule*/
+	box-sizing: border-box;
+}
+
+html {
+    /*When scrolling is triggered on the html*/
+	scroll-behavior: smooth;
+	/*All fonts in the html element should be at 62.5% of their normal size*/
+	font-size: 62.5%;
+}
+
+:root {
+	/* Target the root element and define the following*/
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+	--font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* define variable for custom properties*/
+	--font-size-small: 1.2rem;
+	--font-size-medium: 1.6rem;
+	--font-size-large: 1.8rem;
+	--font-size-x-large: 2.3rem;
+	--font-size-xx-large: 4.8rem;
+	/* define variables for font-weight custom properties */
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+	/*minimum height of line boxes*/
+	--line-height-small: 1.2;
+	--line-height-base: 1.5;
+	--line-height-big: 1.8;
+	--section-header-align: center;
+	/*uppercase*/
+	--section-tagline-transform: uppercase;
+	/* define variable to change the margin*/
+	--section-title-margin: 0;
+	/* define variable to change the color*/
+	--section-title-color: var(--color-black);
+	/*following custom properties:*/
+	--section-padding: 5rem 0;
+	--section-header-padding: 0 0 3rem;
+	--section-body-padding: 0 0 3rem;
+	--section-footer-padding: 3rem 0 0;
+	--section-footer-align: center;
+	--footer-padding: 5rem 0 1rem;
+	/* the nav class*/
+	--nav-item-font-family: var(--font-family-title);
+	--nav-item-font-weight: var(--font-weight-bold);
+	--nav-item-font-size: var(--font-size-medium);
+	--nav-item-letter-spacing: 0.04rem;
+	--nav-item-display: inline-block;
+	--nav-item-margin: 0 0 3rem 0;
+	--nav-item-link-hover: var(--color-primary);
+	/* define variable to margin in section tags line */
+	--section-tagline-margin: 0;
+	/* define variables */
+	--button-display: inline-block;
+	--button-padding: 1.5rem 3rem;
+	--button-border: 0.2rem solid var(--color-primary);
+	--button-color: var(--color-black);
+	--button-text-decoration: none;
+	--button-font-size: var(--font-size-large);
+	--button-hover-color: var(--color-white);
+	--button-hover-text-decoration: none;
+	--button-hover-background: var(--color-primary);
+}
+
+body {
+    /* set the foreground color*/
+	color: var(--text-color);
+	/*font-family to font-family-base*/
+	font-family: var(--font-family-base);
+	/*should have their sizes set to font-size-medium*/
+	font-size: var(--font-size-medium);
+	/* set the font-weight*/
+	font-weight: var(--font-weight-regular);
+	/* set the line-height*/
+	line-height: var(--line-height-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/* set the font family*/
+	font-family: var(--font-family-title);
+	/* set the font weight*/
+	font-weight: var(--font-weight-bold);
+}
+
+a:link {
+	/* set the color text */
+	color: var(--text-color);
+	/* set the decoration in anchor element (without underscore under text) */
+	text-decoration: none;
+}
+
+a:visited {
+	/* set the text style */
+	font-style: italic;
+}
+
+a:hover {
+	/* set the decortation (with a underscore under text) */
+	text-decoration: underline;
+}
+a:active {
+	/* set the background color */
+	background-color: var(--color-light-grey);
+}
+.button {
+	/* set display (render) */
+	display: var(--button-display);
+	/* set the padding, the margin inside element */
+	padding: var(--button-padding);
+	/* set the boder style */
+	border: var(--button-border);
+	/* set the letter size */
+	font-size: var(--button-font-size);
+	/* set the letter color */
+	color: var(--button-color);
+	/* set the text decoration to none */
+	text-decoration: var(--button-text-decoration);
+}
+.button:hover {
+	/* color text */
+	color: var(--button-hover-color);
+	/* text decorarion to none */
+	text-decoration: var(--button-hover-text-decoration);
+	/* background color */
+	background: var(--button-hover-background);
+}
+
+.visually-hidden {
+	/*should have their display to none*/
+	display: none;
+}
+
+.card-category {
+	/*should have their foreground color*/
+	color: var(--color-primary);
+}
+
+.section {
+	/*t the padding on all 4*/
+	padding: var(--section-padding);
+}
+
+.section-header {
+	/* set the horizontal align */
+	text-align: var(--section-header-align);
+	/* pad all 4 sides with*/
+	padding: var(--section-header-padding);
+}
+
+.section-body {
+	/*class, pad all 4 sides with*/
+	padding: var(--section-body-padding)
+}
+
+.section-footer {
+	/*with class section-footer*/
+	padding: var(--section-footer-padding);
+	/*horizontal align*/
+	text-align: var(--section-footer-align);
+}
+
+.section-title {
+	/* style */
+	font-family: var(--font-family-title);
+	/* size */
+	font-size: var(--font-size-xx-large);
+	/* weight */
+	font-weight: var(--font-weight-bold);
+	/* margin (top, button, left, right) */
+	margin: var(--section-title-margin);
+	/*text color */
+	color: var(--section-title-color);
+}
+
+.section-tagline {
+	/*should have their foreground color*/
+	color: var(--color-primary);
+	/* style  */
+	font-family: var(--font-family-title);
+	/* uppercase */
+	text-transform: var(--section-tagline-transform);
+	/* weight */
+	font-weight: var(--font-weight-bold);
+	/*margin in all sides */
+	margin: var(--section-tagline-margin);
+}
+
+.container {
+	/*width fot element*/
+	width: 960px;
+	/*margin*/
+	margin-left: auto;
+	/*margin*/
+	margin-right: auto;
+} 
+
+.footer {
+	/*class section-footer*/
+	padding: var(--footer-padding);
+}
+
+.navbar-menu {
+	/* push the elements to the right  */
+	float: right;
+}
+
+.nav {
+	/*For the nav class:*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.nav .nav-item {
+	/*letter style */
+	font-family: var(--nav-item-font-family);
+	/* wight */
+	font-weight: var(--nav-item-font-weight);
+	/*size of the letter */
+	font-size: var(--nav-item-font-size);
+	/*spacing between each letter */
+	letter-spacing: var(--nav-item-letter-spacing);
+	/*display */
+	display: var(--nav-item-display);
+	/* margin in all sides */
+	margin: var(--nav-item-margin);
+}
+
+.nav .nav-link {
+	/*display */
+	display: block;
+	/* set the padding in top/buttom and right/left */
+	padding: 0.5rem 1rem;
+}
+
+.nav .nav-link:hover {
+	/*color text */
+	color: var(--nav-item-link-hover);
+}
+
+ul.row {
+	/* margin all sides outside the element */
+	margin: 0;
+	/*padding in all sides, inside element */
+	padding: 0;
+	/* take off the style list */
+	list-style: none;
+}
+
+.col-1-3 {
+	/* according parent */
+	width: 33.33%;
+}
+
+.col-1-2 {
+	/* according parent */
+	width: 50%;
+}
+
+.footer-copyright {
+	/*the element */
+	margin: 0;
+	/*font size */
+	font-size: var(--font-size-small);
+	/*color text */
+	color: var(--text-color);
+}
+
+.footer ul {
+	/*text align  */
+	text-align: right;
+}
+
+.row::after {
+	/*empty */
+	content: "";
+	/*tables */
+	display: table;
+	/* dont allow floating element right and left side */
+	clear: both;
+}
+
+[class^="col-"] {
+	/*float */
+	float: left;
+	/* all sides, inside element */
+	padding: 0.5rem;
+}
+
+[data-section-theme="dark"] {
+	/* variables */
+	--text-color: var(--color-white);
+	--section-title-color: var(--color-white);
+	/* background color */
+	background-color: var(--color-black);
+	--button-color: var(--color-white)
+}
+
+.footer-address {
+	/*color text */
+	color: var(--text-color);
+}
+
+.social-link {
+	/*display as block */
+	display: block;
+}
+
+.social-link > svg {
+	/*color or shape color */
+	fill: var(--text-color);
+}
+
+.card-services .card-title {
+	/*outside the element */
+	margin: 0;
+}
+
+.card-services a {
+	/* display as block */
+	display: block;
+	/*2 times root element */
+	padding: 2rem;
+	/*background color */
+	background-color: var(--color-light-grey);
+}
+
+.card-services a:hover {
+	/*  color text */
+	color: var(--color-white);
+	/*  background color */
+	background-color: var(--color-primary);
+	/* decoration (without text decoration) */
+	text-decoration: none;
+}
+
+.card-testimonial {
+	/* set to horizontal align */
+	text-align: center;
+}
+
+.card-testimonial .card-avatar {
+	/*border style */
+	border-radius: 50%;
+	/* according with root element */
+	width: 10rem;
+	/*according with root element */
+	height: 10rem;
+}
+
+.card-testimonial .card-quote cite {
+	/* set the display (render) */
+	display: block;
+	/*padding on top according the root element */
+	padding-top: 1rem;
+	/*color text */
+	color: var(--color-primary);
+}
+
+.section-hero {
+	/* width and height */
+	background-size: 90rem auto;
+}
+
+.section-hero .section-title {
+	margin-bottom: 5rem;
+}
+
+.section-hero .section-inner {
+	padding: 10rem 40rem 2rem 0;
+}

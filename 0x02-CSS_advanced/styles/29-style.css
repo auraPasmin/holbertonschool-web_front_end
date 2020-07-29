@@ -273,8 +273,9 @@ a:active {
 	height: 0.2rem;
 }
 
-/* all elements before the elements with class nav-link inside the elements with class nav-item with hover that is inside the all elements with class nav */
+/* class nav */
 .nav .nav-item:hover .nav-link::before {
+	/**/
 	background-color: var(--color-primary);
 	width: 100%;
 }

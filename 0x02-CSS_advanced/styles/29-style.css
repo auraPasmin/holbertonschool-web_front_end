@@ -255,25 +255,26 @@ a:active {
 	/*color text */
 	color: var(--nav-item-link-hover);
 }
+
 .nav .nav-link::before {
 	/* set the content to empty */
 	content: "";
-	/* position behavior of the elements*/
+	/* set the position behavior of the elements*/
 	position: absolute;
-	/* vertical position */
+	/* set the vertical position */
 	top: 0;
-	/* horizontal position */
+	/* set the horizontal position */
 	left: 0;
-	/*  background colo */
+	/* set the background colo */
 	background-color: var(--color-white);
-	/*  width */
+	/* set the width */
 	width: 0;
-	/*height to 20% of the root element */
+	/* set the height to 20% of the root element */
 	height: 0.2rem;
 }
 
+/* all elements before the elements with class nav-link inside the elements with class nav-item with hover that is inside the all elements with class nav */
 .nav .nav-item:hover .nav-link::before {
-	/**/
 	background-color: var(--color-primary);
 	width: 100%;
 }

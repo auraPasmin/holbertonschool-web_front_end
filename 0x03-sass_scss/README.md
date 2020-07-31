@@ -75,6 +75,22 @@ What you should learn from this project:
 ### [12. Loop Headers](./12-loop_header.scss)
 * Write a Sass file that creates H* tags, where ‘*’ is the size of the font used.
 
+
+### [13. Columns and operators](./100-loop_col.scss)
+* Write a Sass file that creates classes with different width:
+
+
+### [14. Media query #0](./101-media_query.scss)
+* Write a Sass file that assigns:
+
+
+### [15. Media query #1](./102-media_query.scss)
+* Write a Sass file that assigns:
+
+
+### [16. Sort!](./103-sort_strings.scss)
+* Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output.
+
 ---
 
 ## Author

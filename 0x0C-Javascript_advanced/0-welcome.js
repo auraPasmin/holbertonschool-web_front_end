@@ -2,7 +2,7 @@
  "Welcome <fullname>!"
 */
 
-function welcome(firstname, lastname) {
+function welcome(firstName, lastName) {
 	let fullName = firstName + " " + lastName;
 
 	function displayFullName() {
